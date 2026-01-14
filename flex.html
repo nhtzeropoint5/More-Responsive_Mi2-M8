@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flex</title>
+  <style>
+    .box{
+        background-color: teal;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+    .div-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .box-container{
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        margin: 30px auto;
+    }
+
+
+    .items{
+        width: 100px;
+        background-color: tomato;
+        padding: 10px;
+    }
+
+
+   @media screen and (max-width: 900px) {
+        .box {
+            background-color: palevioletred;
+        }
+        .div-container {
+        flex-direction: column;
+        }
+        .items{
+        width: 100%;
+    }
+    }
+
+
+  </style>
+</head>
+<body>
+    <h2>Flex Exploration</h2>
+    <div class="div-container">
+        <div class="box">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, culpa.</p>
+        </div>
+        <div class="box">
+            <h3>box-2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, culpa.</p>
+        </div>
+    </div>
+     <div class="box-container">
+    <div class="items">Box-1</div>
+    <div class="items">Box-2</div>
+    <div class="items">Box-3</div>
+    <div class="items">Box-4</div>
+    <div class="items">Box-5</div>
+    <div class="items">Box-6</div>
+    <div class="items">Box-7</div>
+    <div class="items">Box-8</div>
+    <div class="items">Box-9</div>
+    <div class="items">Box-10</div>
+    <div class="items">Box-11</div>
+    <div class="items">Box-12</div>
+    <div class="items">Box-13</div>
+    <div class="items">Box-14</div>
+    <div class="items">Box-15</div>
+    <div class="items">Box-16</div>
+    <div class="items">Box-17</div>
+    <div class="items">Box-18</div>
+    <div class="items">Box-19</div>
+    <div class="items">Box-20</div></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
