@@ -46,7 +46,7 @@ footer{
 
 @media screen and (min-width:577px) and (max-width:1000px){
     .container{
-        grid-template-areas: 
+    grid-template-areas: 
     "header header header"
     "navbar navbar navbar"
     "sidebar main main"
